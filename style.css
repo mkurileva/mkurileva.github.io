@@ -11,6 +11,16 @@ ul {
     margin: 0;
 }
 
+a[href^="mailto:"] {
+    text-decoration: none;
+    color: #000;
+    cursor: url('картинки для сайта/cursorpointer.png'), pointer;
+  }
+
+  a[href^="mailto:"]:hover {
+    color: #353BDB;
+  }
+
 section {
     height: 100vh;
 }
@@ -357,7 +367,54 @@ section {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.thanks{
+    grid-column: 1;
+    grid-row: 1;
+    img{
+        height: 300px;
+    }
+    justify-self: end;
+    align-self: end;
+}
+
+.star{
+    grid-column: 2;
+    grid-row: 1;
+    img{
+        height: 300px;
+    }
+    justify-self: start;
+    align-self: end;
+}
+
+.contacts{
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: end;
+    align-self: center;
+    text-align: end;
+    font-size: 24px;
+    font-family: "Optima";
+}
+
+.tg:hover {
+    color: #353BDB;
+    cursor: url('картинки для сайта/cursorpointer.png'), pointer;
+}
+
+.inst:hover {
+    color: #353BDB;
+    cursor: url('картинки для сайта/cursorpointer.png'), pointer;
+}
+
+.vk:hover {
+    color: #353BDB;
+    cursor: url('картинки для сайта/cursorpointer.png'), pointer;
 }
 
 html{
