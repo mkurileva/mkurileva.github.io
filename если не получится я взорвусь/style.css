@@ -1,0 +1,364 @@
+body {
+    background-color: #000;
+    margin: 0;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    height: 100vh;
+}
+
+.dm64 {
+    font-size: 64px;
+    color: rgb(0, 0, 0);
+    font-family: "DM Serif Display"
+    }
+
+.container_welcome {
+    height: 100vh;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dm128w {
+    font-size: 128px;
+    color: white;
+    font-family: "DM Serif Display"
+    }
+
+.opt64w {
+    font-size: 64px;
+    color: white;
+    font-family: "Optima"
+}
+
+.opt64b {
+    font-size: 64px;
+    color: rgb(0, 0, 0);
+    font-family: "Optima"
+}
+
+.welcome_list{
+    text-align: right;
+}
+
+._2{
+    background-color: #ffffff;
+    margin: 0;
+    color: #000000;
+}
+
+.container_about {
+    height: 100vh;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr); */
+}
+
+
+.hs {
+    padding: auto;
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    font-family: "DM Serif Display";
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.icons {
+    font-size: 16px;
+    justify-content: space-between;
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-family: "Optima";
+    img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+._3{
+    background-color: #000000;
+    margin: 0;
+    color: #ffffff;
+    height: 470px;
+}
+
+.container_blocks{
+    height: 470px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.block{
+    cursor: pointer;
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+    font-family: "Optima";
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.block:hover {
+    color: #353BDB;
+}
+
+._4{
+    background-color: #ffffff;
+    margin: 0;
+    color: #000000;
+    height: 280px;
+}
+
+.container_title01{
+    background-color: #ffffff;
+    height: 280px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+._5{
+    background-color: #ffffff;
+    margin: 0;
+    color: #000000;
+}
+
+.container_poster1{
+    background-color: #ffffff;
+    height: 100vh;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    display: flex;
+    img {
+        max-height: 600px;
+    }
+    justify-content: space-evenly;
+}
+
+._6{
+    background-color: #000000;
+    margin: 0;
+    color: #ffffff;
+}
+
+.container_poster2{
+    background-color: #000000;
+    height: 100vh;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    display: flex;
+    img {
+        max-height: 600px;
+        max-width: 400px;
+    }
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+._7{
+    background-color: #ffffff;
+    margin: 0;
+    color: #000000;
+}
+
+.container_poster3{
+    background-color: #ffffff;
+    height: 100vh;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.videogame{
+    img{
+        height: 700px;
+    }
+}
+
+.spirit{
+    position:absolute;
+    img{
+        height: 600px;
+    }
+}
+
+._8{
+    background-color: #000000;
+    margin: 0;
+    color: #ffffff;
+    height: 280px; 
+}
+
+.container_title02{
+    background-color: #000000;
+    height: 280px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+._9{
+    background-color: #000000;
+    margin: 0;
+    color: #ffffff;
+}
+
+.container_book{
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100vh;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    display: flex;
+}
+
+.book_block{
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-family: "Optima";
+    flex: 0 0 50%;
+    justify-content: center;
+    box-sizing: border-box;
+    img{
+        height: 300px;
+    }
+    text-align: center;
+}
+
+.book_block1{
+    text-align: end;
+}
+
+._10{
+    background-color: #ffffff;
+    margin: 0;
+    color: #000000;
+    height: 280px; 
+}
+
+.container_title03{
+    background-color: #ffffff;
+    height: 280px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+._11{
+    background-color: #ffffff;
+    margin: 0;
+    color: #000000;
+    height: 100vh; 
+}
+
+.container_app{
+    background-color: #ffffff;
+    height: 100vh;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    display: flex;
+}
+
+._12{
+    background-color: #000000;
+    margin: 0;
+    color: #ffffff;
+    height: 280px; 
+}
+
+.container_title04{
+    background-color: #000000;
+    height: 280px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+._13{
+    background-color: #000000;
+    margin: 0;
+    color: #ffffff;
+}
+
+.container_3d{
+    height: 100vh;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        height: 600px;
+    }
+}
+
+._14{
+    background-color: #ffffff;
+    margin: 0;
+    color: #000000;
+}
+
+.container_end{
+    background-color: #ffffff;
+    height: 100vh;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+html{
+    scroll-behavior: smooth;
+}
