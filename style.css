@@ -21,6 +21,16 @@ a[href^="mailto:"] {
     color: #353BDB;
   }
 
+  a[href^="tel:"] {
+    text-decoration: none;
+    color: #000;
+    cursor: url('картинки для сайта/cursorpointer.png'), pointer;
+  }
+
+  a[href^="tel:"]:hover {
+    color: #353BDB;
+  }
+
 section {
     height: 100vh;
 }
@@ -41,6 +51,32 @@ section {
     justify-content: center;
     align-items: center;
 }
+
+@keyframes rotateSwing {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-10deg); /* Поворот немного влево */
+    }
+    50% {
+      transform: rotate(10deg); /* Поворот немного вправо */
+    }
+    75% {
+      transform: rotate(-5deg); /* Небольшой возврат влево */
+    }
+    100% {
+      transform: rotate(0deg); /* Возврат в исходное положение */
+    }
+  }
+  
+  .star1 {
+    img {
+        width: 200px;
+        height: 200px;
+    }
+    animation: rotateSwing 2s infinite; /* Анимация с бесконечным повторением */
+  }
 
 .dm128w {
     font-size: 128px;
@@ -416,6 +452,26 @@ section {
     color: #353BDB;
     cursor: url('картинки для сайта/cursorpointer.png'), pointer;
 }
+
+.up {
+    font-size: 24px;
+    font-family: "Optima";
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: start;
+    align-self: center;
+    margin-left: 100px;
+}
+
+.arrow1 {
+    img{
+        height: 70px;
+    }
+    justify-self: start;
+    align-self: center;
+    cursor: url('картинки для сайта/cursorpointer.png'), pointer;
+}
+
 
 html{
     scroll-behavior: smooth;
