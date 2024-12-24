@@ -1,8 +1,11 @@
 body {
-    background-color: #000;
     margin: 0;
-    color: #fff;
-    cursor: url('картинки для сайта/cursorauto.png'), auto;
+    --сolor-white: #fff;
+    --сolor-black: #000000;
+    --color-blue: #353BDB;
+    color: var(--сolor-white);
+    background-color: var(--сolor-black);
+    cursor: url('картинки для сайта/cursorauto.png'), auto;   
 }
 
 ul {
@@ -13,22 +16,22 @@ ul {
 
 a[href^="mailto:"] {
     text-decoration: none;
-    color: #000;
+    color: var(--сolor-black);
     cursor: url('картинки для сайта/cursorpointer.png'), pointer;
   }
 
   a[href^="mailto:"]:hover {
-    color: #353BDB;
+    color: var(--color-blue);
   }
 
   a[href^="tel:"] {
     text-decoration: none;
-    color: #000;
+    color: var(--сolor-black);
     cursor: url('картинки для сайта/cursorpointer.png'), pointer;
   }
 
   a[href^="tel:"]:hover {
-    color: #353BDB;
+    color: var(--color-blue);
   }
 
 section {
@@ -37,7 +40,7 @@ section {
 
 .dm64 {
     font-size: 64px;
-    color: rgb(0, 0, 0);
+    color: var(--сolor-black);
     font-family: "DM Serif Display"
     }
 
@@ -80,19 +83,19 @@ section {
 
 .dm128w {
     font-size: 128px;
-    color: white;
+    color: var(--сolor-white);
     font-family: "DM Serif Display"
     }
 
 .opt64w {
     font-size: 64px;
-    color: white;
+    color: var(--сolor-white);
     font-family: "Optima"
 }
 
 .opt64b {
     font-size: 64px;
-    color: rgb(0, 0, 0);
+    color: var(--сolor-black);
     font-family: "Optima"
 }
 
@@ -101,29 +104,71 @@ section {
 }
 
 ._2{
-    background-color: #ffffff;
+    background-color: var(--сolor-white);
     margin: 0;
-    color: #000000;
+    color: var(--сolor-black);
+    height: 1080px;
+}
+
+.container_title{
+    background-color: var(--сolor-white);
+    height: 280px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        height: 220px;
+    }
 }
 
 .container_about {
-    height: 100vh;
+    height: 600px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
     display: flex;
     justify-content: center;
-    /* display: grid;
+    align-items: center;
+    img {
+        height: 85vh;
+    }
+    
+    /* padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr); */
 }
 
+/* ._1_9{
+    background-color: var(--сolor-white);
+    margin: 0;
+    color: var(--сolor-black);
+} */
+
+/* .aboutme {
+    font-size: 64px;
+    color: var(--сolor-black);
+    font-family: "DM Serif Display";
+    grid-row: 1;
+    grid-column: 2;
+    justify-content: center;
+    align-content: center;
+}
+
+
 
 .hs {
-    padding: auto;
+    align-content: start;
+    padding-bottom: 40px;
     font-size: 36px;
-    color: rgb(0, 0, 0);
+    color: var(--сolor-black);
     font-family: "DM Serif Display";
     grid-row: 2;
     grid-column: 1;
@@ -133,7 +178,7 @@ section {
     font-size: 16px;
     justify-content: space-between;
     display: flex;
-    color: rgb(0, 0, 0);
+    color: var(--сolor-black);
     font-family: "Optima";
     img {
         width: 60px;
@@ -141,10 +186,61 @@ section {
     }
 }
 
+.ss {
+    margin-left: 50px;
+    align-content: start;
+    padding-bottom: 40px;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.ss_title {
+    align-content: start;
+    font-size: 36px;
+    color: var(--сolor-black);
+    font-family: "DM Serif Display";
+}
+
+.ss_list {
+    margin-top: 40px;
+    font-size: 24px;
+    color: var(--сolor-black);
+    font-family: "Optima"
+}
+
+.edu_title {
+    align-content: start;
+    font-size: 36px;
+    color: var(--сolor-black);
+    font-family: "DM Serif Display";
+}
+
+.edu {
+    align-content: start;
+    padding-bottom: 40px;
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.edu_list {
+    margin-top: 40px;
+    font-size: 24px;
+    color: var(--сolor-black);
+    font-family: "Optima"
+}
+
+.photo {
+    grid-row: 2;
+    grid-column: 3;
+    img {
+        height: 60vh;
+    }
+} */
+
 ._3{
-    background-color: #000000;
+    background-color: var(--сolor-black);
     margin: 0;
-    color: #ffffff;
+    color: var(--сolor-white);
     height: 470px;
 }
 
@@ -162,7 +258,7 @@ section {
 .block{
     cursor: url('картинки для сайта/cursorpointer.png'), pointer;
     font-size: 48px;
-    color: rgb(255, 255, 255);
+    color: var(--сolor-white);
     font-family: "Optima";
     flex: 0 0 50%;
     box-sizing: border-box;
@@ -171,18 +267,18 @@ section {
 }
 
 .block:hover {
-    color: #353BDB;
+    color: var(--color-blue);
 }
 
 ._4{
-    background-color: #ffffff;
+    background-color: var(--сolor-white);
     margin: 0;
-    color: #000000;
+    color: var(--сolor-black);
     height: 280px;
 }
 
 .container_title01{
-    background-color: #ffffff;
+    background-color: var(--сolor-white);
     height: 280px;
     max-width: 1200px;
     margin-left: auto;
@@ -193,13 +289,13 @@ section {
 }
 
 ._5{
-    background-color: #ffffff;
+    background-color: var(--сolor-white);
     margin: 0;
-    color: #000000;
+    color: var(--сolor-black);
 }
 
 .container_poster1{
-    background-color: #ffffff;
+    background-color: var(--сolor-white);
     height: 100vh;
     max-width: 1200px;
     margin-left: auto;
@@ -213,13 +309,13 @@ section {
 }
 
 ._6{
-    background-color: #000000;
+    background-color: var(--сolor-black);
     margin: 0;
-    color: #ffffff;
+    color: var(--сolor-white);
 }
 
 .container_poster2{
-    background-color: #000000;
+    background-color: var(--сolor-black);
     height: 100vh;
     max-width: 1200px;
     margin-left: auto;
@@ -235,13 +331,13 @@ section {
 }
 
 ._7{
-    background-color: #ffffff;
+    background-color: var(--сolor-white);
     margin: 0;
-    color: #000000;
+    color: var(--сolor-black);
 }
 
 .container_poster3{
-    background-color: #ffffff;
+    background-color: var(--сolor-white);
     height: 100vh;
     max-width: 1200px;
     margin-left: auto;
@@ -267,14 +363,14 @@ section {
 }
 
 ._8{
-    background-color: #000000;
+    background-color: var(--сolor-black);
     margin: 0;
-    color: #ffffff;
+    color: var(--сolor-white);
     height: 280px; 
 }
 
 .container_title02{
-    background-color: #000000;
+    background-color: var(--сolor-black);
     height: 280px;
     max-width: 1200px;
     margin-left: auto;
@@ -285,9 +381,9 @@ section {
 }
 
 ._9{
-    background-color: #000000;
+    background-color: var(--сolor-black);
     margin: 0;
-    color: #ffffff;
+    color: var(--сolor-white);
 }
 
 .container_book{
@@ -304,7 +400,7 @@ section {
 
 .book_block{
     font-size: 24px;
-    color: rgb(255, 255, 255);
+    color: var(--сolor-white);
     font-family: "Optima";
     flex: 0 0 50%;
     justify-content: center;
@@ -320,14 +416,14 @@ section {
 }
 
 ._10{
-    background-color: #ffffff;
+    background-color: var(--сolor-white);
     margin: 0;
-    color: #000000;
+    color: var(--сolor-black);
     height: 280px; 
 }
 
 .container_title03{
-    background-color: #ffffff;
+    background-color: var(--сolor-white);
     height: 280px;
     max-width: 1200px;
     margin-left: auto;
@@ -338,31 +434,36 @@ section {
 }
 
 ._11{
-    background-color: #ffffff;
+    background-color: var(--сolor-white);
     margin: 0;
-    color: #000000;
-    height: 100vh; 
+    color: var(--color-black);
+    height: 1900px; 
 }
 
 .container_app{
-    background-color: #ffffff;
+    background-color: var(--сolor-white);
     height: 100vh;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
     display: flex;
+    justify-content: center;
+    align-content: center;
+    img {
+        height: 1800px;
+    }
 }
 
 ._12{
-    background-color: #000000;
+    background-color: var(--сolor-black);
     margin: 0;
-    color: #ffffff;
+    color: var(--сolor-white);
     height: 280px; 
 }
 
 .container_title04{
-    background-color: #000000;
+    background-color: var(--сolor-black);
     height: 280px;
     max-width: 1200px;
     margin-left: auto;
@@ -373,9 +474,9 @@ section {
 }
 
 ._13{
-    background-color: #000000;
+    background-color: var(--сolor-black);
     margin: 0;
-    color: #ffffff;
+    color: var(--сolor-white);
 }
 
 .container_3d{
@@ -392,13 +493,13 @@ section {
 }
 
 ._14{
-    background-color: #ffffff;
+    background-color: var(--сolor-white);
     margin: 0;
-    color: #000000;
+    color: var(--сolor-black);
 }
 
 .container_end{
-    background-color: #ffffff;
+    background-color: var(--сolor-white);
     height: 100vh;
     max-width: 1200px;
     margin-left: auto;
@@ -439,17 +540,17 @@ section {
 }
 
 .tg:hover {
-    color: #353BDB;
+    color: var(--color-blue);
     cursor: url('картинки для сайта/cursorpointer.png'), pointer;
 }
 
 .inst:hover {
-    color: #353BDB;
+    color: var(--color-blue);
     cursor: url('картинки для сайта/cursorpointer.png'), pointer;
 }
 
 .vk:hover {
-    color: #353BDB;
+    color: var(--color-blue);
     cursor: url('картинки для сайта/cursorpointer.png'), pointer;
 }
 
